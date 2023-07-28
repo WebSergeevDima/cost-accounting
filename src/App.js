@@ -1,4 +1,4 @@
-import CostItem from "./components/CostItem";
+import CostItems from "./components/CostItems";
 
 const cost = [
     {
@@ -26,9 +26,7 @@ function App() {
     return (
         <div className="App">
             <h1>React</h1>
-            {cost.map(item => {
-                return <CostItem key={item.id} date={item.date} title={item.title} amount={item.amount}/>
-            })}
+            <CostItems list={cost} />
         </div>
     );
 }
