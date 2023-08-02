@@ -1,0 +1,29 @@
+.cost-form__control {
+    margin-bottom: 10px;
+}
+
+.cost-form label {
+    display: block;
+    font-weight: bold;
+}
+
+.cost-form input {
+    width: 260px;
+    height: 40px;
+    border-radius: 6px;
+    border: 0;
+}
+
+.cost-form__btn {
+    background: #ff7f0e;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+cost-form__btn:hover {
+    background: #ff8b26;
+}

@@ -1,4 +1,5 @@
 import CostItems from "./components/Costs/CostItems";
+import NewCost from "./components/NewCost/NewCost";
 
 const cost = [
     {
@@ -25,7 +26,7 @@ const cost = [
 const App = () => {
     return (
         <div className="App">
-            <h1>React</h1>
+            <NewCost/>
             <CostItems list={cost} />
         </div>
     );
