@@ -18,7 +18,6 @@ const CostItem = (props) => {
                 <div>{title}</div>
                 <div>${props.amount}</div>
             </div>
-            <button onClick={changeDescriptionHandler}>Изменить описание</button>
         </Card>
     );
 };
