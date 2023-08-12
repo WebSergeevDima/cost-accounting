@@ -1,0 +1,17 @@
+.cost-item__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cost-item__list > li {
+    margin-bottom: 20px;
+}
+.cost-item__list > li:last-child {
+    margin-bottom: 0px;
+}
+
+.cost-item__empty {
+    padding: 0 1rem;
+    color: red;
+}
