@@ -6,6 +6,7 @@ const CostForm = (props) => {
     const [title, setTitle] = useState('');
     const [amount, setAmount] = useState('');
     const [date, setDate] = useState('');
+    const [isForm, setIsForm] = useState(false);
 
     const changeNameHandler = (event) => {
         setTitle(event.target.value)
@@ -29,10 +30,23 @@ const CostForm = (props) => {
         };
 
         props.onSaveCostData(costData);
+        setIsForm(false);
 
         setTitle('');
         setAmount('');
         setDate('');
+    }
+
+    const showFormHandler = () => {
+        setIsForm(true);
+    }
+    const hideFormHandler = () => {
+        setIsForm(false);
+    }
+
+    if(!isForm) {
+        return <button className="btn__open-form" onClick={showFormHandler}>Добавить новый расход</button>;
+
     }
 
     return (
@@ -50,8 +64,12 @@ const CostForm = (props) => {
                     <label>Дата</label>
                     <input type="date" max="2023-08-02" onChange={changeDateHandler} value={date}/>
                 </div>
+
                 <button type="submit" className="cost-form__actions">
                     <div className="cost-form__btn">Добавить расход</div>
+                </button>
+                <button type="submit" className="cost-form__actions" onClick={hideFormHandler}>
+                    <div className="cost-form__btn">Отмена</div>
                 </button>
             </form>
         </div>

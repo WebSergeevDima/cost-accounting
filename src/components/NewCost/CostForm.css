@@ -27,3 +27,17 @@
 cost-form__btn:hover {
     background: #ff8b26;
 }
+
+
+.btn__open-form {
+    border: 0;
+    background: #474dff;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn__open-form:hover {
+    opacity: .8;
+}
