@@ -1,6 +1,7 @@
 import CostItems from "./components/Costs/CostItems";
 import NewCost from "./components/NewCost/NewCost";
 import {useState} from "react";
+import Diagram from "./components/Diagram/Diagram";
 
 const INITIAL_COSTS = [
     {
@@ -13,16 +14,15 @@ const INITIAL_COSTS = [
         id: 'c2',
         date: new Date(2023, 1, 1),
         title: 'Заголовок 2',
-        amount: 9
+        amount: 229
     },
     {
         id: 'c3',
         date: new Date(2023, 2, 1),
         title: 'Заголовок 3',
-        amount: 1.99
+        amount: 5551.99
     }
 ];
-
 
 const App = () => {
 

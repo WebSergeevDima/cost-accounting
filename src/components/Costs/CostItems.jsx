@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 import './CostItems.css';
 import CostFilter from "./CostFilter";
 import CostList from "./CostList";
+import CostsDiagram from "./CostsDiagram";
 
 const CostItems = (props) => {
 
@@ -18,6 +19,7 @@ const CostItems = (props) => {
         <div>
             <Card className={'cost-items'}>
                 <CostFilter changeYearHandler={changeYearHandler} selectedYear={selectedYear}/>
+                <CostsDiagram costs={filterList}/>
                 <CostList list={filterList}/>
             </Card>
         </div>
